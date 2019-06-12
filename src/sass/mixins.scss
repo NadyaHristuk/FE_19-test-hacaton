@@ -1,0 +1,19 @@
+@mixin button($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  padding: 20px 38px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14px;
+}
+
+@mixin font-family($font-family: "OpenSans", $weight: normal, $style: normal) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin px-to-rem($px) {
+  font-size: $px/16 + px;
+}
